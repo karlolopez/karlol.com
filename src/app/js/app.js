@@ -14,7 +14,7 @@
     init_inner_link();
     init_chart_circle();
     init_contact_form();
-    init_portfolio_details();
+    //init_portfolio_details();
   });
 
   //Run function when window on scroll
@@ -253,13 +253,12 @@
       $wrap.addClass('uk-animation-toggle');
       UIkit.modal($el).show();
 
-      //show loading first
+      /*//show loading first
       $wrap.html(
         '<div class="uk-position-center  uk-text-center">' +
           "<div data-uk-spinner></div> " +
         "</div>"
-      ); 
-      
+      ); */
       $.post($this.attr("href"), function(data) {
         $wrap.html(data); 
         $wrap.removeClass('uk-animation-toggle');
